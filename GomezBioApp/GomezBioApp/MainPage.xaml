@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GomezBioApp"
              x:Class="GomezBioApp.MainPage">
-    <StackLayout>
+
+    <StackLayout BackgroundColor="WhiteSmoke">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -13,7 +14,7 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Phillip Gomez"
+            <Label Grid.Row="0" Grid.Column="0" Text="Phillip Gomez"
                    BackgroundColor="Green"
                    TextColor="Black"
                    Grid.ColumnSpan="2"
@@ -21,6 +22,12 @@
                    FontSize="25"
                    HeightRequest="50"
                    VerticalTextAlignment="Center"/>
+            <Button Grid.Row="1" Grid.Column="1"
+                    Text="About Me"
+                    TextColor="Black"
+                    BackgroundColor="Red"
+                    HeightRequest="50"
+                    FontSize="25"/>
         </Grid>
        
     </StackLayout>

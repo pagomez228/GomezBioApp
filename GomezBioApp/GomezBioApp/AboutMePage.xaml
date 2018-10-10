@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GomezBioApp.AboutMePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Enter a Phoneword:"/>
+            <Entry Placeholder="Number" />
+            <Button Text="Translate"/>
+            <Button Text="Call" IsEnabled="False"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
