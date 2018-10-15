@@ -4,15 +4,24 @@
              xmlns:local="clr-namespace:GomezBioApp"
              x:Class="GomezBioApp.MainPage">
 
-    <StackLayout BackgroundColor="WhiteSmoke">
-        <Grid>
+    <StackLayout BackgroundColor="White"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="Center">
+        <Grid RowSpacing="0"
+              HorizontalOptions="Center">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Row="0" Grid.Column="0" Text="Phillip Gomez"
                    BackgroundColor="Green"
@@ -22,12 +31,50 @@
                    FontSize="25"
                    HeightRequest="50"
                    VerticalTextAlignment="Center"/>
-            <Button Grid.Row="1" Grid.Column="1"
+            <Button Grid.Row="2" Grid.Column="1"
                     Text="About Me"
                     TextColor="Black"
-                    BackgroundColor="Red"
+                    BackgroundColor="WhiteSmoke"
+                    HeightRequest="175"
+                    FontSize="25"
+                    Clicked="Button_Clicked"/>
+            <Button Grid.Row="4" Grid.Column="1"
+                    Text="Skills"
+                    TextColor="Black"
+                    BackgroundColor="WhiteSmoke"
                     HeightRequest="50"
                     FontSize="25"/>
+            <Button Grid.Row="6" Grid.Column="1"
+                    Text="Contact Me"
+                    TextColor="Black"
+                    BackgroundColor="WhiteSmoke"
+                    HeightRequest="50"
+                    FontSize="25"/>
+            <BoxView Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     BackgroundColor="Black"/>
+            <BoxView Grid.Row="3"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     BackgroundColor="LightGray"
+                     HorizontalOptions="Center"
+                     WidthRequest="300"/>
+            <BoxView Grid.Row="5"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     BackgroundColor="LightGray"
+                     HorizontalOptions="Center"
+                     WidthRequest="300"/>
+            <BoxView Grid.Row="7"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     BackgroundColor="LightGray"
+                     HorizontalOptions="Center"
+                     WidthRequest="300"/>
+            <Image Grid.Row="1" Grid.Column="0"/>
+            <Image Grid.Row="3" Grid.Column="0"/>
+            <Image Grid.Row="5" Grid.Column="0"/>
         </Grid>
        
     </StackLayout>
