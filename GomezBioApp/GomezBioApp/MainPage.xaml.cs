@@ -14,9 +14,19 @@ namespace GomezBioApp
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void AboutMeNavigation(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new AboutMePage());
+            Navigation.PushAsync(new AboutMePage());
+        }
+
+        private void SkillsNavigation(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
+
+        private void ContactMeNavigation(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactMePage());
         }
     }
 }

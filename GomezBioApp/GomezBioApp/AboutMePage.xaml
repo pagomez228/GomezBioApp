@@ -1,13 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GomezBioApp.AboutMePage">
+             x:Class="GomezBioApp.AboutMePage"
+             Title="Biography App">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="10">
-            <Label Text="Enter a Phoneword:"/>
-            <Entry Placeholder="Number" />
-            <Button Text="Translate"/>
-            <Button Text="Call" IsEnabled="False"/>
+        <StackLayout>
+            <StackLayout Padding="20" Spacing="10" Orientation="Horizontal">
+                <Image Source="mePicture.jpg"
+                       x:Name="AboutMeImage"/>
+                <Label 
+                    Text="About Me"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    HeightRequest="175"
+                    FontSize="25"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="My name is Phillip Gomez, I was born in Kansas City, Missouri and raised in Overland Park, Kansas. I graduate high school from Blue Valley North High School in 2014. In 2015, I started attending Pittsburg State University, where I'm pursuing a Computer Information Systems degree and plan to graduate in the spring of 2019."/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

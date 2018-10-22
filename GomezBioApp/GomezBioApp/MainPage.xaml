@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GomezBioApp"
              x:Class="GomezBioApp.MainPage"
-             Title="whatevers">
+             Title="Biography App">
 
     <StackLayout BackgroundColor="White"
                  VerticalOptions="FillAndExpand"
@@ -38,19 +38,24 @@
                     BackgroundColor="WhiteSmoke"
                     HeightRequest="175"
                     FontSize="25"
-                    Clicked="Button_Clicked"/>
+                    x:Name="AboutMeButton"
+                    Clicked="AboutMeNavigation"/>
             <Button Grid.Row="4" Grid.Column="1"
                     Text="Skills"
                     TextColor="Black"
                     BackgroundColor="WhiteSmoke"
                     HeightRequest="50"
-                    FontSize="25"/>
+                    FontSize="25"
+                    x:Name="SkillsButton"
+                    Clicked="SkillsNavigation"/>
             <Button Grid.Row="6" Grid.Column="1"
                     Text="Contact Me"
                     TextColor="Black"
                     BackgroundColor="WhiteSmoke"
                     HeightRequest="50"
-                    FontSize="25"/>
+                    FontSize="25"
+                    x:Name="ContactMeButton" 
+                    Clicked="ContactMeNavigation"/>
             <BoxView Grid.Row="1"
                      Grid.Column="0"
                      Grid.ColumnSpan="2"
@@ -74,11 +79,26 @@
                      HorizontalOptions="Center"
                      WidthRequest="300"/>
             <Image Grid.Row="2" Grid.Column="0"
-                   Source="personIcon.png"/>
+                   Source="personIcon.png"
+                   x:Name="AboutMeImage">
+                <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="AboutMeNavigation"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image Grid.Row="4" Grid.Column="0"
-                   Source="skillsIcon.png"/>
+                   Source="skillsIcon.png"
+                   x:Name="SkillsImage">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SkillsNavigation"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image Grid.Row="6" Grid.Column="0"
-                   Source="contactIcon.png"/>
+                   Source="contactIcon.png"
+                   x:Name="ContactMe">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ContactMeNavigation"/>
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
        
     </StackLayout>
