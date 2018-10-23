@@ -91,7 +91,7 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\personIcon.png" />
+    <AndroidResource Include="Resources\drawable\mePicture.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\skillsIcon.png" />
@@ -100,7 +100,7 @@
     <AndroidResource Include="Resources\drawable\contactIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\mePicture.jpg" />
+    <AndroidResource Include="Resources\drawable\personIcon.png" />
   </ItemGroup>
   <Import Project="..\GomezBioApp\GomezBioApp.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -34,7 +34,7 @@
                    VerticalTextAlignment="Center"/>
             <Button Grid.Row="2" Grid.Column="1"
                     Text="About Me"
-                    TextColor="Black"
+                    TextColor="#139FAA"
                     BackgroundColor="WhiteSmoke"
                     HeightRequest="175"
                     FontSize="25"
@@ -42,7 +42,7 @@
                     Clicked="AboutMeNavigation"/>
             <Button Grid.Row="4" Grid.Column="1"
                     Text="Skills"
-                    TextColor="Black"
+                    TextColor="#139FAA"
                     BackgroundColor="WhiteSmoke"
                     HeightRequest="50"
                     FontSize="25"
@@ -50,7 +50,7 @@
                     Clicked="SkillsNavigation"/>
             <Button Grid.Row="6" Grid.Column="1"
                     Text="Contact Me"
-                    TextColor="Black"
+                    TextColor="#139FAA"
                     BackgroundColor="WhiteSmoke"
                     HeightRequest="50"
                     FontSize="25"

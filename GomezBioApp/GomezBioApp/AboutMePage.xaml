@@ -4,20 +4,28 @@
              x:Class="GomezBioApp.AboutMePage"
              Title="Biography App">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="20" Spacing="10" Orientation="Horizontal">
+        <StackLayout Padding="10">
+            <StackLayout Spacing="10" Orientation="Horizontal">
                 <Image Source="mePicture.jpg"
-                       x:Name="AboutMeImage"/>
+                       x:Name="AboutMeImage"
+                       HeightRequest="100"
+                       Margin="0,0,30,0"/>
                 <Label 
                     Text="About Me"
-                    TextColor="Black"
+                    TextColor="#139FAA"
                     HorizontalTextAlignment="Center"
                     VerticalTextAlignment="Center"
                     HeightRequest="175"
-                    FontSize="25"/>
+                    FontSize="40"/>
             </StackLayout>
-            <StackLayout>
-                <Label Text="My name is Phillip Gomez, I was born in Kansas City, Missouri and raised in Overland Park, Kansas. I graduate high school from Blue Valley North High School in 2014. In 2015, I started attending Pittsburg State University, where I'm pursuing a Computer Information Systems degree and plan to graduate in the spring of 2019."/>
+            <StackLayout Padding="30">
+                <BoxView HeightRequest="1"
+                     BackgroundColor="Gray"
+                     HorizontalOptions="Center"
+                     WidthRequest="300"/>
+                <Label Text="My name is Phillip Gomez, I was born in Kansas City, Missouri and raised in Overland Park, Kansas. I graduate high school from Blue Valley North High School in 2014. In 2015, I started attending Pittsburg State University, where I'm pursuing a Computer Information Systems degree and plan to graduate in the spring of 2019."
+                       TextColor="#139FAA"
+                       FontSize="20"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
