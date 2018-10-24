@@ -1,12 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GomezBioApp.SkillsPage">
+             x:Class="GomezBioApp.SkillsPage"
+             Title="Biography App">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Skills Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20"
+                     Spacing="20"
+                     BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="skillsIcon.png"
+                       HeightRequest="100"
+                       Margin="0,0,30,0"/>
+                <Label Text="Skills"
+                       TextColor="#139FAA"
+                       HeightRequest="50"
+                       FontSize="40"
+                       VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <BoxView HeightRequest="1"
+                         BackgroundColor="Gray"
+                         HorizontalOptions="Center"
+                         WidthRequest="300"/>
+            <Entry Placeholder="Skill"
+                   PlaceholderColor="#139FAA"
+                   TextColor="#139FAA"
+                   x:Name="skillEntry"/>
+            <Button Text="Add Skill"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#139FAA"/>
+            <ListView x:Name="skillsListView"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

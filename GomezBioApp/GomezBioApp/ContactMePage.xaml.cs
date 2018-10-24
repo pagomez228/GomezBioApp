@@ -16,5 +16,26 @@ namespace GomezBioApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(nameEntry.Text))
+            {
+                DisplayAlert("Error", "Please enter your name", "Okay");
+            }
+            if (string.IsNullOrEmpty(emailEntry.Text))
+            {
+                DisplayAlert("Error", "Please enter your email", "Okay");
+            }
+            if (string.IsNullOrEmpty(messageEditor.Text))
+            {
+                DisplayAlert("Error", "Please enter a message", "Okay");
+            }
+            else
+            {
+                DisplayAlert("Alert", "You're message was sent.", "Okay");
+            }
+            
+        }
+    }
 }
