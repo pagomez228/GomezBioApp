@@ -21,14 +21,42 @@
                          BackgroundColor="Gray"
                          HorizontalOptions="Center"
                          WidthRequest="300"/>
-            <Entry Placeholder="Skill"
-                   PlaceholderColor="#139FAA"
-                   TextColor="#139FAA"
-                   x:Name="skillEntry"/>
-            <Button Text="Add Skill"
-                    Clicked="Button_Clicked"
-                    BackgroundColor="#139FAA"/>
-            <ListView x:Name="skillsListView"/>
+            <ListView x:Name="skillsListView"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image WidthRequest="50"
+                                       HeightRequest="50"
+                                       Source="{Binding Icon}"
+                                       Grid.Row="0"
+                                       Grid.Column="0"
+                                       Grid.RowSpan="2"/>
+                                <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="24"
+                                       Grid.Row="0"
+                                       Grid.Column="1"
+                                       TextColor="#139FAA"/>
+                                <Label Text="{Binding Description}"
+                                       FontSize="18"
+                                       Grid.Row="1"
+                                       Grid.Column="1"
+                                       TextColor="#139FAA"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

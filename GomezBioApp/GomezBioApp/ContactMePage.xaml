@@ -32,7 +32,7 @@
                        TextColor="#139FAA"/>
                 <Editor HeightRequest="100"
                         x:Name="messageEditor"
-                        Text="#139FAA"/>
+                        TextColor="#139FAA"/>
                 <Button Text="Submit"
                         Clicked="Button_Clicked"
                         BackgroundColor="#139FAA"/>
