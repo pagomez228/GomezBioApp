@@ -30,5 +30,16 @@ namespace GomezBioApp
             public string Description { get; set; }
             public string Name { get; set; }
         }
+
+        private void skillsListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+            Skill selectedItem = e.SelectedItem as Skill;
+            (sender as ListView).SelectedItem = null;
+            DisplayAlert("Clicked", "Hi you clicked " + selectedItem.Name, "Okay");
+        }
     }
 }

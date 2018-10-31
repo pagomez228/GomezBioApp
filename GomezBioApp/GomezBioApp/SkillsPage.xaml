@@ -22,7 +22,8 @@
                          HorizontalOptions="Center"
                          WidthRequest="300"/>
             <ListView x:Name="skillsListView"
-                      HasUnevenRows="True">
+                      HasUnevenRows="True"
+                      ItemSelected="skillsListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
